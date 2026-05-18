@@ -137,3 +137,10 @@ main .personalInfo .container .formFull input {
 .formFull input {
   flex: 1;
 }
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 10px;
+}
