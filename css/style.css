@@ -37,8 +37,20 @@ body {
 .header h1 {
   text-align: center;
   font-size: 52px;
+  display: flex;
 }
-
+.header .iconWrap {
+  position: relative;
+  display: inline-block;
+}
+.header h1 span img {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .header h3 {
   font-weight: 100;
   font-size: 16px;
@@ -54,7 +66,9 @@ header .applicantPhoto {
   top: 50%;
   transform: translateY(-23%);
 }
-
+main {
+  padding: 20px;
+}
 main .title {
   display: flex;
   justify-content: center;
@@ -170,6 +184,7 @@ footer {
   padding: 10px;
 }
 
-.signature{
+.signature {
   border-top: 1px solid black;
+  padding: var(--padding-of);
 }
