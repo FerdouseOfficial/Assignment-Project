@@ -80,6 +80,31 @@ form {
   width: 50%;
   margin-bottom: 10px;
 }
+.genderGroup {
+  display: flex;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.genderGroup .gender {
+  background-color: var(--primary-color);
+  padding: var(--padding-of);
+  border: 2px solid var(--primary-color);
+  color: black;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 230px;
+}
+.genderGroup .mf {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-left: 20px;
+}
+.genderGroup .mf input {
+  margin-top: 4px;
+}
 .inputGroup label {
   background-color: var(--primary-color);
   padding: var(--padding-of);
@@ -138,9 +163,13 @@ main .personalInfo .container .formFull input {
   flex: 1;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: space-between;
   margin-top: 10px;
   padding: 10px;
+}
+
+.signature{
+  border-top: 1px solid black;
 }

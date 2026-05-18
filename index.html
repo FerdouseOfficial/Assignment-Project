@@ -53,9 +53,14 @@
 
             <!-- ROW: GENDER + RELIGION -->
             <div class="formRow">
-              <div class="inputGroup">
-                <label for="gender">GENDER</label>
-                <input type="text" id="gender" name="gender" />
+              <div class="genderGroup">
+                <label for="gender" class="gender">Gender</label>
+                <div class="mf">
+                  <input type="radio" name="male" id="male" />
+                  <label for="male">Male</label>
+                  <input type="radio" name="female" id="female" />
+                  <label for="female">Female</label>
+                </div>
               </div>
 
               <div class="inputGroup">
@@ -64,7 +69,6 @@
               </div>
             </div>
 
-            <!-- ROW: BLOOD + NATIONALITY -->
             <div class="formRow">
               <div class="inputGroup">
                 <label for="bloodGroup">BLOOD GROUP</label>
@@ -77,7 +81,6 @@
               </div>
             </div>
 
-            <!-- ROW: GUARDIAN + MOBILE -->
             <div class="formRow">
               <div class="inputGroup">
                 <label for="gurdianName">GUARDIAN NAME</label>
@@ -90,7 +93,6 @@
               </div>
             </div>
 
-            <!-- FULL WIDTH -->
             <div class="formFull">
               <label for="dateOfBirth">DATE OF BIRTH</label>
               <input type="date" id="dateOfBirth" name="dateOfBirth" />
@@ -145,8 +147,8 @@
     </main>
 
     <footer>
-      <div class="authorize_signature">AUTHORIZED SIGNATURE</div>
-      <div class="studentSignature">STUDENT'S SIGNATURE</div>
+      <div class="authorize signature">AUTHORIZED SIGNATURE</div>
+      <div class="student signature">STUDENT'S SIGNATURE</div>
     </footer>
   </body>
 </html>
