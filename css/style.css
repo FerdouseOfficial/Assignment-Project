@@ -68,26 +68,29 @@ main .title h1 {
   font-size: 25px;
   color: var(--text-color);
 }
-main .aboutFormDetail form {
+form {
   padding: 10px 0px;
 }
-main .aboutFormDetail .formRow {
+.formRow {
   display: flex;
   width: 100%;
 }
-main .aboutFormDetail .formRow .inputGroup {
+.inputGroup {
   display: flex;
   width: 50%;
+  margin-bottom: 10px;
 }
-main .aboutFormDetail .formRow .inputGroup label {
+.inputGroup label {
   background-color: var(--primary-color);
   padding: var(--padding-of);
   border: 2px solid var(--primary-color);
   color: black;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  width: 230px;
 }
-main .aboutFormDetail .formRow .inputGroup input {
+.inputGroup input {
   width: 100%;
   padding: var(--padding-of);
   border: 2px solid var(--primary-color);
@@ -96,4 +99,41 @@ main .aboutFormDetail .formRow .inputGroup input {
 }
 main .aboutFormDetail .formRow .inputGroup:first-child input {
   border-right: none;
+}
+main .personalInfo h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: var(--primary-color);
+  padding: var(--padding-of);
+}
+main .personalInfo .container {
+  width: 100%;
+}
+main .personalInfo .container .formFull {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+main .personalInfo .container .formFull label {
+  background-color: var(--primary-color);
+  padding: var(--padding-of);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  width: 230px;
+}
+
+main .personalInfo .container .formFull input {
+  width: 100%;
+  border: 2px solid var(--primary-color);
+  padding: var(--padding-of);
+  outline: none;
+  border-left: none;
+}
+
+.inputGroup input,
+.formFull input {
+  flex: 1;
 }

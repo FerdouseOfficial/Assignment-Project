@@ -24,7 +24,6 @@
         <h1>ADMISSION FORM</h1>
       </div>
 
-      <!-- ONLY THIS PART IS CHANGED -->
       <div class="aboutFormDetail">
         <form action="">
           <div class="formRow">
@@ -40,54 +39,106 @@
           </div>
         </form>
       </div>
-      <!-- ONLY THIS PART IS CHANGED -->
 
-      <section class="PersonalInfo">
+      <section class="personalInfo">
         <h1>PERSONAL INFORMATION</h1>
+
         <div class="container">
           <form action="#">
-            <label for="fullName">FULL NAME</label>
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              placeholder="Enter Your Full Name"
-            />
-            <label for="gender">GENDER</label>
-            <input type="radio" name="gender" id="male" />
-            <label for="male">MALE</label>
-            <input type="radio" name="gender" id="female" />
-            <label for="female">FEMALE</label>
-            <label for="religion">RELIGION</label>
-            <input type="text" name="religion" id="religion" />
-            <label for="dateOfBirth">DATE OF BIRTH</label>
-            <input type="date" name="dateOfBirth" id="dateOfBirth" />
-            <label for="bloodGroup">BLOOD GROUP</label>
-            <input type="text" name="bloodGroup" id="bloodGroup" />
-            <label for="nationality">Nationality</label>
-            <input type="text" name="nationality" id="nationality" />
-            <label for="contactNo">Contact NO</label>
-            <input type="number" name="contactNo" id="contactNo" />
-            <label for="email">E-MAIL</label>
-            <input type="email" name="email" id="email" />
-            <label for="fathersName">FATHER'S NAME</label>
-            <input type="text" name="fathersName" id="fathersName" />
-            <label for="mothersName">MOTHER'S NAME</label>
-            <input type="text" name="mothersName" id="mothersName" />
-            <label for="presentAddress">PRESENT ADDRESS</label>
-            <input type="text" name="presentAddress" id="presentAddress" />
-            <label for="permanentAddress">PERMANENT ADRERSS</label>
-            <input type="text" name="permanentAddress" id="permanentAddress" />
-            <label for="gurdianName">GUARDIAN NAME</label>
-            <input type="text" name="gurdianName" id="gurdianName" />
-            <label for="mobileNo">MOBILE NO</label>
-            <input type="tel" name="mobileNo" id="mobileNo" />
-            <label for="courseName">COURSE NAME</label>
-            <input type="text" name="courseName" id="courseName" />
-            <label for="batchNo">BATCH NO</label>
-            <input type="text" name="batchNo" id="batchNo" />
-            <label for="courseDuration">COURSE DURATION</label>
-            <input type="text" name="courseDuration" id="courseDuration" />
+            <!-- FULL WIDTH -->
+            <div class="formFull">
+              <label for="fullName">FULL NAME</label>
+              <input type="text" id="fullName" name="fullName" />
+            </div>
+
+            <!-- ROW: GENDER + RELIGION -->
+            <div class="formRow">
+              <div class="inputGroup">
+                <label for="gender">GENDER</label>
+                <input type="text" id="gender" name="gender" />
+              </div>
+
+              <div class="inputGroup">
+                <label for="religion">RELIGION</label>
+                <input type="text" id="religion" name="religion" />
+              </div>
+            </div>
+
+            <!-- ROW: BLOOD + NATIONALITY -->
+            <div class="formRow">
+              <div class="inputGroup">
+                <label for="bloodGroup">BLOOD GROUP</label>
+                <input type="text" id="bloodGroup" name="bloodGroup" />
+              </div>
+
+              <div class="inputGroup">
+                <label for="nationality">NATIONALITY</label>
+                <input type="text" id="nationality" name="nationality" />
+              </div>
+            </div>
+
+            <!-- ROW: GUARDIAN + MOBILE -->
+            <div class="formRow">
+              <div class="inputGroup">
+                <label for="gurdianName">GUARDIAN NAME</label>
+                <input type="text" id="gurdianName" name="gurdianName" />
+              </div>
+
+              <div class="inputGroup">
+                <label for="mobileNo">MOBILE NO</label>
+                <input type="tel" id="mobileNo" name="mobileNo" />
+              </div>
+            </div>
+
+            <!-- FULL WIDTH -->
+            <div class="formFull">
+              <label for="dateOfBirth">DATE OF BIRTH</label>
+              <input type="date" id="dateOfBirth" name="dateOfBirth" />
+            </div>
+
+            <div class="formFull">
+              <label for="email">E-MAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="formFull">
+              <label for="fathersName">FATHER'S NAME</label>
+              <input type="text" id="fathersName" name="fathersName" />
+            </div>
+
+            <div class="formFull">
+              <label for="mothersName">MOTHER'S NAME</label>
+              <input type="text" id="mothersName" name="mothersName" />
+            </div>
+
+            <div class="formFull">
+              <label for="presentAddress">PRESENT ADDRESS</label>
+              <input type="text" id="presentAddress" name="presentAddress" />
+            </div>
+
+            <div class="formFull">
+              <label for="permanentAddress">PERMANENT ADDRESS</label>
+              <input
+                type="text"
+                id="permanentAddress"
+                name="permanentAddress"
+              />
+            </div>
+
+            <div class="formFull">
+              <label for="courseName">COURSE NAME</label>
+              <input type="text" id="courseName" name="courseName" />
+            </div>
+
+            <div class="formFull">
+              <label for="batchNo">BATCH NO</label>
+              <input type="text" id="batchNo" name="batchNo" />
+            </div>
+
+            <div class="formFull">
+              <label for="courseDuration">COURSE DURATION</label>
+              <input type="text" id="courseDuration" name="courseDuration" />
+            </div>
           </form>
         </div>
       </section>
