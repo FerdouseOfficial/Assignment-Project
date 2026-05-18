@@ -1,8 +1,9 @@
 :root {
-  --primary-color: #ADD8E6;
-  --text-color: #ffffff;
+  --primary-color: #add8e6;
+  --text-color: #000;
+  --padding-of: 5px 20px;
 }
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -54,16 +55,45 @@ header .applicantPhoto {
   transform: translateY(-23%);
 }
 
-main .title{
+main .title {
   display: flex;
   justify-content: center;
   padding: 25px;
 }
-main .title h1{
+main .title h1 {
   background-color: var(--primary-color);
-  padding: 5px 10px;
+  padding: 5px 15px;
   border-radius: 20px;
   font-weight: 500;
   font-size: 25px;
   color: var(--text-color);
+}
+main .aboutFormDetail form {
+  padding: 10px 0px;
+}
+main .aboutFormDetail .formRow {
+  display: flex;
+  width: 100%;
+}
+main .aboutFormDetail .formRow .inputGroup {
+  display: flex;
+  width: 50%;
+}
+main .aboutFormDetail .formRow .inputGroup label {
+  background-color: var(--primary-color);
+  padding: var(--padding-of);
+  border: 2px solid var(--primary-color);
+  color: black;
+  display: flex;
+  align-items: center;
+}
+main .aboutFormDetail .formRow .inputGroup input {
+  width: 100%;
+  padding: var(--padding-of);
+  border: 2px solid var(--primary-color);
+  border-left: none;
+  outline: none;
+}
+main .aboutFormDetail .formRow .inputGroup:first-child input {
+  border-right: none;
 }

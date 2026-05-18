@@ -18,23 +18,30 @@
       </div>
       <div class="applicantPhoto"></div>
     </header>
+
     <main>
       <div class="title">
         <h1>ADMISSION FORM</h1>
       </div>
+
+      <!-- ONLY THIS PART IS CHANGED -->
       <div class="aboutFormDetail">
         <form action="">
-          <label for="formNo">Form No:</label>
-          <input
-            type="text"
-            id="fornNo"
-            name="fornNo"
-            placeholder="Enter Form Number"
-          />
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" placeholder="" />
+          <div class="formRow">
+            <div class="inputGroup">
+              <label for="formNo">Form No:</label>
+              <input type="text" id="formNo" name="formNo" />
+            </div>
+
+            <div class="inputGroup">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" />
+            </div>
+          </div>
         </form>
       </div>
+      <!-- ONLY THIS PART IS CHANGED -->
+
       <section class="PersonalInfo">
         <h1>PERSONAL INFORMATION</h1>
         <div class="container">
@@ -85,6 +92,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <div class="authorize_signature">
         <div class="signature_line"></div>
