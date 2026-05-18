@@ -1,10 +1,15 @@
-* {
+:root {
+  --primary-color: #ADD8E6;
+  --text-color: #ffffff;
+}
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 html,
 body {
+  /* Try to learn why to use heigh and widht 100% we use here. DOn't just blindly follow it okay */
   height: 100%;
   width: 100%;
   font-family:
@@ -24,28 +29,41 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 15vh;
-  /* position: absolute; */
+  padding: 20px;
+  position: relative;
 }
+
 .header h1 {
   text-align: center;
   font-size: 52px;
 }
+
 .header h3 {
   font-weight: 100;
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 3px;
 }
-.applicantPhoto{
-  position: relative;
-}
-.applicantPhoto img {
-  position: inherit;
-  left: 200px;
-  top: 35px;
+
+header .applicantPhoto {
   height: 150px;
-  width: 130px;
-  /* display: none; */
+  width: 150px;
+  border: 2px solid var(--primary-color);
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-23%);
 }
 
+main .title{
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+main .title h1{
+  background-color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--text-color);
+}
